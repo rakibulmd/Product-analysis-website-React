@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import useReviews from "../../Hooks/useReviews";
 import smartWatch from "../../images/smartwatch.png";
 import Review from "../Review/Review";
@@ -6,6 +7,7 @@ import "./Home.css";
 
 const Home = () => {
     const [reviews, setReviews] = useReviews();
+    let navigate = useNavigate();
     return (
         <main className="px-3 md:px-5 mt-5">
             <div className="container showcase mx-auto flex flex-col items-center md:flex-row justify-center ">
@@ -41,7 +43,10 @@ const Home = () => {
                     <Review key={review.id} review={review}></Review>
                 ))}
             </div>
-            <button className="bg-orange-600 text-white block p-2 px-10 my-3 rounded mx-auto">
+            <button
+                onClick={() => navigate("/reviews")}
+                className="bg-orange-600 text-white block p-2 px-10 my-3 rounded mx-auto"
+            >
                 See All Reviews
             </button>
         </main>
