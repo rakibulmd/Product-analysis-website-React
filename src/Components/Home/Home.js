@@ -1,8 +1,11 @@
 import React from "react";
+import useReviews from "../../Hooks/useReviews";
 import smartWatch from "../../images/smartwatch.png";
+import Review from "../Review/Review";
 import "./Home.css";
 
 const Home = () => {
+    const [reviews, setReviews] = useReviews();
     return (
         <main>
             <div className="container showcase mx-auto flex flex-col items-center md:flex-row justify-center w-screen ">
@@ -26,6 +29,17 @@ const Home = () => {
                     src={smartWatch}
                     alt=""
                 />
+            </div>
+            <div className="container mx-auto">
+                <h2 className="text-center font-bold text-3xl mb-5">
+                    User Reviews
+                    <span className="text-orange-600 ml-2">
+                        ({reviews.slice(0, 3).length}/{reviews.length})
+                    </span>
+                </h2>
+                {reviews.slice(0, 3).map((review) => (
+                    <Review key={review.id} review={review}></Review>
+                ))}
             </div>
         </main>
     );

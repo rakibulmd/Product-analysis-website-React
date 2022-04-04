@@ -31,14 +31,19 @@ const Header = () => {
         { id: 5, name: "About", link: "/about" },
     ];
     return (
-        <header className="container mx-auto sticky top-0 pt-3 bg-white/75">
-            <div
-                onClick={() => {
-                    setOpen(!open);
-                }}
-                className="w-10 h-10 md:hidden ml-1"
-            >
-                {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
+        <header className="container mx-auto sticky top-0 bg-white/75">
+            <div className="flex md:block bg-white/75">
+                <div
+                    onClick={() => {
+                        setOpen(!open);
+                    }}
+                    className="w-10 h-10 md:hidden ml-1 "
+                >
+                    {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
+                </div>
+                <h2 className="text-center text-3xl mx-auto">
+                    Smart Watch Guide
+                </h2>
             </div>
             <nav
                 className={`md:flex justify-center absolute md:static duration-300 w-full ease-in ${
@@ -47,7 +52,7 @@ const Header = () => {
             >
                 {routes.map((route) => (
                     <CustomLink
-                        className="block p-3 md:p-4 ml-3 text-xl md:border-b-2 font-semibold uppercase hover:text-orange-600 hover:border-orange-600 bg-white/75"
+                        className="block p-3 md:p-4 ml-3 text-l md:border-b-2 font-semibold uppercase hover:text-orange-600 hover:border-orange-600"
                         key={route.id}
                         to={route.link}
                     >
