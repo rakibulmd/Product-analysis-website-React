@@ -7,8 +7,8 @@ import "./Home.css";
 const Home = () => {
     const [reviews, setReviews] = useReviews();
     return (
-        <main>
-            <div className="container showcase mx-auto flex flex-col items-center md:flex-row justify-center w-screen ">
+        <main className="px-3 md:px-5 mt-5">
+            <div className="container showcase mx-auto flex flex-col items-center md:flex-row justify-center ">
                 <div className="order-2 md:order-1 text-center md:text-left">
                     <h2 className="text-4xl">We can tell</h2>
                     <h2 className="text-5xl text-orange-600 leading">
@@ -41,6 +41,9 @@ const Home = () => {
                     <Review key={review.id} review={review}></Review>
                 ))}
             </div>
+            <button className="bg-orange-600 text-white block p-2 px-10 my-3 rounded mx-auto">
+                See All Reviews
+            </button>
         </main>
     );
 };
