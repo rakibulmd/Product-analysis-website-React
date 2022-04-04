@@ -13,7 +13,7 @@ const Review = ({ review }) => {
         time,
     } = review;
     return (
-        <div className="sm:mb-10 lg:mb-0border-2 border-orange-600 rounded-xl p-3 shadow-xl">
+        <div className="mb-10 lg:mb-0 border-2 border-orange-600 rounded-xl p-3 shadow-xl">
             <div className="border-b-2">
                 <h2 className="font-bold text-xl pb-2">{comment}</h2>
 
