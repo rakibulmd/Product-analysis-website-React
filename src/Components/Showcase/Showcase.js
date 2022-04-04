@@ -21,7 +21,7 @@ const Showcase = () => {
                 </button>
             </div>
             <img
-                className="md:w-1/2 sm:w-full md:mx-auto order-1 md:order-2"
+                className="w-1/2 md:mx-auto order-1 md:order-2"
                 src={smartWatch}
                 alt=""
             />

@@ -8,10 +8,10 @@ const Home = () => {
     const [reviews, setReviews] = useReviews();
     let navigate = useNavigate();
     return (
-        <main className="px-3 md:px-5 mt-5">
+        <main className="px-3 md:px-5">
             <Showcase></Showcase>
             <div className="container mx-auto">
-                <h2 className="text-center font-bold text-3xl mb-5">
+                <h2 className="text-center font-bold text-3xl mb-5 mt-10">
                     User Reviews
                     <span className="text-orange-600 ml-2">
                         ({reviews.slice(0, 3).length}/{reviews.length})
