@@ -31,7 +31,7 @@ const Header = () => {
         { id: 5, name: "About", link: "/about" },
     ];
     return (
-        <header className="container mx-auto sticky top-0 bg-white/75">
+        <header className="container mx-auto sticky top-0 bg-white/75 z-50">
             <div className="flex md:block bg-white/75">
                 <div
                     onClick={() => {
@@ -41,7 +41,7 @@ const Header = () => {
                 >
                     {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
                 </div>
-                <h2 className="text-center text-3xl mx-auto">
+                <h2 className="text-center text-3xl mx-auto z-50">
                     Smart Watch Guide
                 </h2>
             </div>
@@ -52,7 +52,7 @@ const Header = () => {
             >
                 {routes.map((route) => (
                     <CustomLink
-                        className="block p-3 md:p-4 ml-3 text-l md:border-b-2 font-semibold uppercase hover:text-orange-600 hover:border-orange-600"
+                        className="block p-3 md:p-4 ml-3 text-l md:border-b-2 font-semibold uppercase hover:text-orange-600 hover:border-orange-600 z-50 bg-white/100"
                         key={route.id}
                         to={route.link}
                     >

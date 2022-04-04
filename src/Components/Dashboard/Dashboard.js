@@ -101,7 +101,7 @@ const Dashboard = () => {
                     Figure: Investment across the months
                 </h2>
             </div>
-            <div>
+            <div className="my-10">
                 <ResponsiveContainer width="100%" height={400}>
                     <PieChart width={400} height={400}>
                         <Pie
@@ -116,6 +116,9 @@ const Dashboard = () => {
                         />
                     </PieChart>
                 </ResponsiveContainer>
+                <h2 className="text-center text-3xl">
+                    Figure: Revenue across the months
+                </h2>
             </div>
         </div>
     );
