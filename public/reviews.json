@@ -45,7 +45,7 @@
         "description": "this watch has no voice assistant, OS is WearOS copycat, no third party app support, cant show u the time in 12hr format, inaccurate fitness and sleep tracking, no AOD, cannot use voice to dictate messages, cant make mobile payments even tho it has NFC, buggy and limited notification settings. THESE ARE BASIC FEATURES EVERY SMARTWATCH GETS RIGHT! (except for samsung watch with bixby)",
         "comment": "Manage to get fast charging after using a fix 5v/2A charging brick.",
         "time": "2018-09-10T09:39:39 -06:00",
-        "rating": 5
+        "rating": 4.8
     },
     {
         "id": "624acd51c3f1bb9487014590",
@@ -69,7 +69,7 @@
         "description": "I have been using this for 10 days now. You need to download realme link app on your phone and need tonconnect with your watch. Looks is excellent. Sports mode is extraordinary. My use is high and still I get 4 days battery back up. Its very great.",
         "comment": "Great product within this price range, love it!",
         "time": "2017-08-09T04:52:24 -06:00",
-        "rating": 4.5
+        "rating": 4.6
     },
     {
         "id": "624acd51d827f76d1e439eb5",
@@ -93,6 +93,6 @@
         "description": "Amazing watch with great everyday tracking and there is a little bit lag with the app but other than that it's great. Battery life is great . Display is bright in sunlight and buttons are really tacky, the best part is the weight of the watch no matter who wears it's the lightest watch available.",
         "comment": "Value for money Best quality",
         "time": "2020-07-10T06:13:52 -06:00",
-        "rating": 5
+        "rating": 4.25
     }
 ]

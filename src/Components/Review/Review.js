@@ -1,4 +1,25 @@
-import React from "react";
+import React, { Component } from "react";
+import StarRatings from "react-star-ratings";
+class Foo extends Component {
+    changeRating(newRating, name) {
+        this.setState({
+            rating: newRating,
+        });
+    }
+
+    render() {
+        return (
+            <StarRatings
+                rating={this.state.rating}
+                starRatedColor="rgb(230, 67, 47)"
+                starEmptyColor="rgb(203, 211, 227)"
+                changeRating={this.changeRating}
+                numberOfStars={5}
+                name="rating"
+            />
+        );
+    }
+}
 
 const Review = ({ review }) => {
     const {
@@ -16,8 +37,23 @@ const Review = ({ review }) => {
         <div className="mb-10 border-2 border-orange-600 rounded-xl p-3 shadow-xl">
             <div className="border-b-2">
                 <h2 className="font-bold text-xl pb-2">{comment}</h2>
-
-                <div>{rating}</div>
+                <div className="flex items-center">
+                    <div className="p-2">
+                        <StarRatings
+                            rating={rating}
+                            starRatedColor="rgb(230, 67, 47)"
+                            starEmptyColor="rgb(203, 211, 227)"
+                            starDimension="20px"
+                            starSpacing="1px"
+                        />
+                    </div>
+                    <div>
+                        {" "}
+                        <p>
+                            <small>{rating} / 5</small>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div className="text-center">
