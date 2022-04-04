@@ -10,7 +10,10 @@ const Header = () => {
         return (
             <div>
                 <Link
-                    style={{ borderColor: match ? "red" : "grey" }}
+                    style={{
+                        borderColor: match ? "rgb(234 88 12)" : "",
+                        color: match ? "rgb(234 88 12)" : "",
+                    }}
                     to={to}
                     {...props}
                 >
@@ -28,23 +31,23 @@ const Header = () => {
         { id: 5, name: "About", link: "/about" },
     ];
     return (
-        <header className="container mx-auto sticky top-0 ">
+        <header className="container mx-auto sticky top-0 pt-3 bg-white/75">
             <div
                 onClick={() => {
                     setOpen(!open);
                 }}
-                className="w-6 h-6 md:hidden"
+                className="w-10 h-10 md:hidden ml-1"
             >
                 {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
             </div>
             <nav
                 className={`md:flex justify-center absolute md:static duration-300 w-full ease-in ${
-                    open ? "top-6" : "top-[-150px]"
+                    open ? "top-10" : "top-[-250px] bg-white/75"
                 }`}
             >
                 {routes.map((route) => (
                     <CustomLink
-                        className="block md:p-4 ml-2 text-xl md:border-b-2 font-semibold uppercase hover:text-orange-600 hover:border-orange-600"
+                        className="block p-3 md:p-4 ml-3 text-xl md:border-b-2 font-semibold uppercase hover:text-orange-600 hover:border-orange-600 bg-white/75"
                         key={route.id}
                         to={route.link}
                     >

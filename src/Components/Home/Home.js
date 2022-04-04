@@ -1,13 +1,25 @@
 import React from "react";
 import smartWatch from "../../images/smartwatch.png";
+import "./Home.css";
 
 const Home = () => {
     return (
         <main>
-            <div className="container mx-auto flex flex-col md:flex-row md:justify-center sm:justify-start h-screen w-screen items-center">
-                <div className="order-2 md:order-1">
-                    <h2 className="text-7xl">We can tell</h2>
-                    <h2 className="text-7xl">What is best for you...</h2>
+            <div className="container showcase mx-auto flex flex-col items-center md:flex-row justify-center w-screen ">
+                <div className="order-2 md:order-1 text-center md:text-left">
+                    <h2 className="text-4xl">We can tell</h2>
+                    <h2 className="text-5xl text-orange-600 leading">
+                        The best for you
+                    </h2>
+                    <p className="mt-8">
+                        If you are looking for your next smart watch, you have
+                        come to the right place. We have reviewed almost all
+                        popular smart watches so you can decide which one can
+                        suit you the best. Don't forget to post your own review!
+                    </p>
+                    <button className="bg-orange-600 text-white p-2 px-3 mt-3 rounded">
+                        See Reviews
+                    </button>
                 </div>
                 <img
                     className="md:w-1/2 sm:w-full md:mx-auto order-1 md:order-2"
