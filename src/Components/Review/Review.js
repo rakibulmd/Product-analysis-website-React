@@ -26,7 +26,7 @@ const Review = ({ review }) => {
                 <p className="text-stone-700 text-6xl">❞</p>
             </div>
 
-            <div className="flex justify-between items-center ">
+            <div className="flex justify-between items-center">
                 <div className="mt-5 flex items-center justify-center">
                     <div>
                         <img

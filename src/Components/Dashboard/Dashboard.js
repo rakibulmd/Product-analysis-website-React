@@ -45,6 +45,7 @@ const Dashboard = () => {
                         <XAxis dataKey="month" />
                         <YAxis />
                         <Tooltip />
+                        <Legend />
                     </LineChart>
                 </ResponsiveContainer>
                 <h2 className="text-center text-3xl">
@@ -114,6 +115,7 @@ const Dashboard = () => {
                             fill="rgb(234 88 12)"
                             label
                         />
+                        <Legend />
                     </PieChart>
                 </ResponsiveContainer>
                 <h2 className="text-center text-3xl">
