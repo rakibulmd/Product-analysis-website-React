@@ -28,7 +28,7 @@ const Header = () => {
         { id: 5, name: "About", link: "/about" },
     ];
     return (
-        <header className="container mx-auto">
+        <header className="container mx-auto sticky top-0 ">
             <div
                 onClick={() => {
                     setOpen(!open);
