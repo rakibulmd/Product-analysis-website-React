@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import smartWatch from "../../images/smartwatch.png";
 import "./Showcase.css";
 
 const Showcase = () => {
+    const navigate = useNavigate();
     return (
         <div className="container showcase mx-auto flex flex-col items-center md:flex-row justify-center ">
             <div className="order-2 md:order-1 text-center md:text-left">
@@ -16,12 +18,17 @@ const Showcase = () => {
                     smart watches so you can decide which one can suit you the
                     best. Don't forget to post your own review!
                 </p>
-                <button className="bg-orange-600 text-white p-2 px-3 mt-3 rounded">
-                    See Reviews
+                <button
+                    onClick={() => {
+                        navigate("/about");
+                    }}
+                    className="bg-orange-600 text-white p-2 px-3 mt-3 rounded"
+                >
+                    Know More
                 </button>
             </div>
             <img
-                className="w-1/2 md:mx-auto order-1 md:order-2"
+                className="w-full md:w-1/2 md:mx-auto order-1 md:order-2"
                 src={smartWatch}
                 alt=""
             />

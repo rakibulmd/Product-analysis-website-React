@@ -38,7 +38,7 @@ const Header = () => {
                         onClick={() => {
                             setOpen(!open);
                         }}
-                        className="w-10 h-10 md:hidden ml-1 "
+                        className="w-12 h-12 md:hidden ml-1 "
                     >
                         {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
                     </div>
