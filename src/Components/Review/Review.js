@@ -35,7 +35,7 @@ const Review = ({ review }) => {
         time,
     } = review;
     return (
-        <div className="mb-10 border-2 border-orange-600 rounded-xl p-3 shadow-xl relative h-[500px] animate__animated animate__fadeInUp">
+        <div className="mb-10 border-2 border-orange-600 rounded-xl p-3 shadow-xl relative h-[500px] animate__animated animate__fadeInUp animate__fast	800ms">
             <div className="border-b-2">
                 <h2 className="font-bold text-xl pb-2">{comment}</h2>
                 <div className="flex items-center">

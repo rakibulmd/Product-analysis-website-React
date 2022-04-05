@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="container mx-auto p-3 md:p-5 mt-10">
             <img
-                className="w-full md:w-1/2 mx-auto animate__animated animate__fadeInUp"
+                className="w-full md:w-1/2 mx-auto animate__animated animate__fadeInUp animate__fast	800ms"
                 src={smartWatch2}
                 alt=""
             />
