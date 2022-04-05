@@ -17,9 +17,11 @@ const Home = () => {
                         ({reviews.slice(0, 3).length}/{reviews.length})
                     </span>
                 </h2>
-                {reviews.slice(0, 3).map((review) => (
-                    <Review key={review.id} review={review}></Review>
-                ))}
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
+                    {reviews.slice(0, 3).map((review) => (
+                        <Review key={review.id} review={review}></Review>
+                    ))}
+                </div>
             </div>
             <button
                 onClick={() => navigate("/reviews")}

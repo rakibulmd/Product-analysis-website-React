@@ -31,7 +31,7 @@ const Header = () => {
         { id: 5, name: "About", link: "/about" },
     ];
     return (
-        <header className="mx-auto sticky top-0 bg-white/75 z-50 shadow-sm ">
+        <header className=" flex justify-center sticky top-0 bg-white/75 z-50 shadow-sm ">
             <div className="container">
                 <div className="flex md:block bg-white/75">
                     <div
