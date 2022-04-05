@@ -28,7 +28,7 @@ const Dashboard = () => {
     }, []);
 
     return (
-        <div className="container px-3 md:px-5 lg:grid grid-cols-2 gap-5">
+        <div className="container mx-auto px-3 md:px-5 lg:grid grid-cols-2 gap-5">
             <div className="my-10">
                 <ResponsiveContainer width="100%" height={400}>
                     <LineChart
